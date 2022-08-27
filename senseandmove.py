@@ -27,5 +27,9 @@ def move(p,U):
         q.append(s)
     return q
 
-print(move(p,1))
+for k in range(len(measurements)):
+    p=sense(p,measurements[k])
+    p=move(p,motions[k])
+
+print(p)
 
